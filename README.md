@@ -1,2 +1,2 @@
-# Projeto Account PHP
- Um sistema onde o usuario possa se logar e alterar informações
+# Projeto Account em PHP
+ Um sistema onde o usuario possa se cadastrar, com login e alterar informações de cadastrado
