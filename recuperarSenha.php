@@ -46,14 +46,14 @@
                             
                             //Server settings
                             //$mail->SMTPDebug = SMTP::DEBUG_SERVER;    
-                            $mail->CharSet = 'UTF-8';                  //Enable verbose debug output
+                            $mail->CharSet = 'UTF-8';                                   //Enable verbose debug output
                             $mail->isSMTP();                                            //Send using SMTP
-                            $mail->Host       = 'sandbox.smtp.mailtrap.io';                     //Set the SMTP server to send through
+                            $mail->Host       = 'sandbox.smtp.mailtrap.io';             //Set the SMTP server to send through
                             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                            $mail->Username   = '2083010c7e60b4';                     //SMTP username
-                            $mail->Password   = '9a1cfcc43520d7';                               //SMTP password
-                            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
-                            $mail->Port       = 2525;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+                            $mail->Username   = '2083010c7e60b4';                       //SMTP username
+                            $mail->Password   = '9a1cfcc43520d7';                       //SMTP password
+                            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable implicit TLS encryption
+                            $mail->Port       = 2525;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 
 

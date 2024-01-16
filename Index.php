@@ -19,7 +19,7 @@
 
         <?php
             //exemplo de criptografar senha
-            //echo password_hash(123456, PASSWORD_DEFAULT);  
+            // echo password_hash(123456, PASSWORD_DEFAULT);  
         ?>
         <h1>Faça seu login</h1>
 
@@ -28,7 +28,7 @@
             
 
             if(!empty($dadosLogin['MandarLogin'])){
-                //var_dump($dadosLogin);
+                // var_dump($dadosLogin);
                 $query_usuario = "SELECT * FROM usuarios 
                                     WHERE email = '".$dadosLogin['usuario']."'
                                     LIMIT 1";
@@ -48,7 +48,7 @@
                         $_SESSION['msg'] = "<p style='color:red'>Erroa: Usuario ou senha  inválida </p";
                     }
                 }else{
-                    $_SESSION['msg'] = "<p style='color:red'>Erro: Usuario ou senha inválido </p";
+                    $_SESSION['msg'] = "<p style='color:red'>Erro: Usuario ou senha inválido a</p";
                 }
             }
 
@@ -68,6 +68,7 @@
             <input type="submit" value="Enviar" name="MandarLogin">
         </form>
 
+        <a href="cadastrar.php">Cadastrar</a><br>
         <a href="recuperarSenha.php">Esqueci a senha</a>
 
     <p>Proxima etapa realizar o cadastro e mostrar que o usuario possa alterar os dados dele no home</p>
@@ -90,7 +91,7 @@
 
         
     ?>
-        <table style="width:40%">
+        <table style="width:70%">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -98,6 +99,7 @@
                     <th>Nome</th>
                     <th>Idade</th>
                     <th>Endereço</th>
+                    <th>Senha</th>
                 </tr>
             <thead>
             <tbody>
@@ -108,6 +110,7 @@
                             <td>".$valor['nome']."</td>
                             <td>".$valor['idade']."</td>
                             <td>".$valor['endereco']."</td>
+                            <td>".$valor['password']."</td>
                         </tr>";
                     }  
                 ?>
